@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/public/cdn/font/Roboto-VF.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/cdn/font/Montserrat.woff2') format('woff2'),
+    url('/public/cdn/font/Montserrat.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('/public/cdn/font/GreatVibes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  overflow: hidden;
+
+  background-image: url('/src/cdn/img/k&d.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: Roboto;
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
+.rightText {
+  display: grid;
+  justify-content: right;
+
+  margin-top: 13%;
+}
+
+.teyvatLovers {
+  position: relative;
+  display: inline-block;
+
+  overflow: visible;
+
+  padding: .25rem 0rem 0rem;
+
+  background: transparent;
+  border-radius: .5rem;
+  color: white;
+
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 60px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  line-height: 1;
+
+  transition: color .28s ease, background-color .28s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+.teyvatLovers::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  left: 0;
+
+  background: transparent;
+  transform-origin: left center;
+  transform: scaleX(0);
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+
+  z-index: 1;
+
+  transition: transform .36s cubic-bezier(.2, .9, .2, 1), background .2s ease;
+}
+
+.teyvatLovers::after {
+  content: attr(data-jp);
+  color: white;
+  white-space: nowrap;
+
+  pointer-events: none;
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  font-size: 45px;
+
+  transform: translate(-50%, -50%) translateY(6px);
+
+  z-index: 2;
+
+  opacity: 0;
+
+  transition: opacity .22s ease, transform .28s cubic-bezier(.2, .9, .2, 1);
+}
+
+.teyvatLovers:hover,
+.teyvatLovers:focus,
+.teyvatLovers.active {
+  color: transparent;
+  background: transparent;
+
+  outline: none;
+}
+
+.teyvatLovers:hover::before,
+.teyvatLovers:focus::before,
+.teyvatLovers.active::before {
+  transform: scaleX(1);
+}
+
+.teyvatLovers:hover::after,
+.teyvatLovers:focus::after,
+.teyvatLovers.active::after {
+  opacity: 1;
+
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.teyvatLovers:focus {
+  box-shadow: 0 0 0 6px rgba(43, 27, 111, 0.06);
+}
+
+.rightText .youAndMe {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.rightText .nossaData {
+  position: relative;
+  top: -50px;
+  font-size: 16px;
+  opacity: 0.7;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.toDani-btn {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 20px;
+  position: relative;
+
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+
+  cursor: pointer;
+
+  transition: transform 0.4s ease;
+
+  z-index: 10;
+}
+.toDani-btn:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.extra-text {
+  position: fixed;
+  right: 8px;
+  bottom: 10px;
+  height: 80%;
+  width: 30%;
+
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255);
+  opacity: 0;
+
+  z-index: 20;
+
+  font-family: Roboto;
+
+  transform: translateY(200%);
+  transition: transform 0.9s ease, opacity 0.6s ease;
+}
+
+.extra-text.open {
+  opacity: 1;
+  transform: translateY(0);
+
+  color: black;
+}
+
+.extra-text .byGalinhas {
+  font-size: 40px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  justify-content: right;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+  html,
+  body {
+    overflow: hidden;
+  }
+
+  body {
+    position: relative;
+    width: auto;
+    height: 100vh;
+
+    background-position: 75%;
+    background-size: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 5px
+  }
+
+  .rightText {
+    position: relative;
+
+    bottom: 10%;
+  }
+
+  .rightText .youAndMe {
+    justify-content: center;
+  }
+
+  .rightText .nossaData {
+    justify-content: center;
+  }
+
+  .extra-text {
+    height: auto;
+    width: auto;
+
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .teyvatLovers {
+    font-size: 50px;
+  }
+
+  .teyvatLovers::after {
+    font-size: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .teyvatLovers,
+  .teyvatLovers::before,
+  .teyvatLovers::after {
+    transition: none !important;
+  }
+}
