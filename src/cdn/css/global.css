@@ -33,7 +33,38 @@ body {
   font-family: Roboto;
   color: white;
   background-color: black;
+  z-index: -1;
 }
+
+.folha {
+  position: fixed;
+  z-index: -1;
+  top: -50px;
+  width: 500px;
+  height: 500px;
+  background-image: url('/src/cdn/img/folha.png'); /* textura da folha */
+  background-size: cover;
+  animation: cair 8s linear infinite;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes cair {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50vh) translateX(20px);
+  }
+  100% {
+    transform: translateY(110vh) translateX(-20px);
+    opacity: 0.7;
+  }
+}
+
+
+
 
 a {
   text-decoration: none;

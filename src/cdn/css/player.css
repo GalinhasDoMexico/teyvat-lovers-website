@@ -1,7 +1,9 @@
 div.player {
     background-color: #eee;
     border-radius: 10px;
-
+    border-left-color: rgb(255, 67, 67);
+    border-style: solid;
+    border-left-width: 5px;
 
     width: 410px;
     height: auto;
