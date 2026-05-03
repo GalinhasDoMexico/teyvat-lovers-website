@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: "SLANDER, Synymata & neverwaves - When I'm With You",
       desc: "Foi a música que eu estava ouvindo quando eu disse que te amava pela primeira vez.",
-      src: "https://sc.maid.zone/_/restream/slanderofficial/whenimwithyou"
+      src: "https://sc3.maid.zone/_/restream/slanderofficial/whenimwithyou"
     },
     {
       title: "blackbear - anxiety",
       desc: "Você é meu equilíbrio. Sem isso, eu me destabilizo e fico ansioso.",
-      src: "https://sc.maid.zone/_/restream/beartrapsound/anxiety-1"
+      src: "https://sc3.maid.zone/_/restream/beartrapsound/anxiety-1"
     },
     {
       title: "Zeds Dead x MKLA - Alive (Dirt Monkey Remix)",
       desc: "Você é o meu sentido na escuridão, a luz que me mantém vivo.",
-      src: "https://sc.maid.zone/_/restream/zedsdead/zeds-dead-x-mkla-alive-dirt-monkey-remix"
+      src: "https://sc3.maid.zone/_/restream/zedsdead/zeds-dead-x-mkla-alive-dirt-monkey-remix"
     }
   ];
 
