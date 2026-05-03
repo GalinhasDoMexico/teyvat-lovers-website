@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: "blackbear - anxiety",
       desc: "Você é meu equilíbrio. Sem isso, eu me destabilizo e fico ansioso.",
-      src: "https://sc3.maid.zone/_/restream/beartrapsound/anxiety-1"
+      src: "https://sc3.maid.zone/_/api/restream/user-689035414/anxiety-blackbear-feat-frnd-5"
     },
     {
       title: "Zeds Dead x MKLA - Alive (Dirt Monkey Remix)",
